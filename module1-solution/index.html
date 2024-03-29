@@ -7,13 +7,10 @@
     <body ng-controller="LunchCheckController">
 
         <div>
-            <input type="text" ng-model="food">
-
-        </div>
-        <div>Message: {{valueMessage}}</div>
-        <div>
+            <label> List comma-separated items they usually eat for lunch</label><br>
+            <input type="text" ng-model="food"><br>
             <button ng-click="LunchMessage()">Check If Too Much</button>
         </div>
-        
+        <div>Message: {{valueMessage}}</div>
     </body>
 </html>

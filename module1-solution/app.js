@@ -13,25 +13,19 @@
             $scope.valueMessage = Message($scope.food);
         };
 
-        /*$scope.LunchMessage = function(){
-
-            //Enjoy
-            //To much
-
-
-        }*/
-
         function Message(str){
             var count = 0;
+            count = str.split(',')
+            console.log (count.length);
             if(str == ""){
                 return "Please enter data first";
             }
-            count = str.split(',')
-            console.log ('valor de count ' + count);
-            return "Sin evaluacui&oacute;n"
+            
+            if(count.length <= 3 ){
+                return "Enjoy";
+            }
+            return "To much"
         }
-
-
       }
     
     })();
