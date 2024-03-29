@@ -3,13 +3,13 @@
         <title> App LunchCheck</title>
         <script src="angular.min.js"></script>
     </head>
-    <body ng-controller="">
+    <body ng-controller="LunchCheckController">
 
         <div>
             <input type="text" ng-model="food">
         </div>
         <div>
-            <button ng-click>"Check If Too Much</button>
+            <button ng-click="LunchMessage()">"Check If Too Much</button>
         </div>
         
     </body>

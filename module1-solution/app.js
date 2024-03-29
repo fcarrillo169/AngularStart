@@ -3,9 +3,18 @@
       angular.module('LunchCheck', [])
 
       .controller('LunchCheckController', LunchCheckController);
+      
       LunchCheckController.$inject= ['$scope'];
-      function LunchMessage($scope){
-        
+      function LunchCheckController($scope){
+        $scope.name = "";
+
+        $scope.LunchMessage = function(){
+
+
+        }
+
+
+
       }
     
     })();
